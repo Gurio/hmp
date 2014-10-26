@@ -14,7 +14,7 @@
     xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", "serve/", false );
     xmlHttp.send( null );
-    document.getElementById("response").innerHTML = xmlHttp.responseText;
+    document.getElementById("response").innerHTML = "Your useragent:" + xmlHttp.responseText;
 }
 </script>
 

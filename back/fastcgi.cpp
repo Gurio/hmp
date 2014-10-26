@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+
 #include "fcgio.h"
 
 using namespace std;
@@ -9,6 +10,7 @@ int main(void) {
     streambuf * cin_stream  = cin.rdbuf();
     streambuf * cout_stream = cout.rdbuf();
     streambuf * cerr_stream = cerr.rdbuf();
+    char *buf;
 
     FCGX_Request request;
 
@@ -29,12 +31,13 @@ int main(void) {
         cout.rdbuf(&cout_fcgi_stream);
         cerr.rdbuf(&cerr_fcgi_stream);
 
-        char buf [2048];
-        cin >> buf;
-        logfile << "output: " << buf << endl << endl;
+        buf = FCGX_GetParam("HTTP_USER_AGENT", request.envp); 
 
         cout << "Content-type: text/html\r\n\r\n"
-             << "    <html>Hello, World!</html>\n";
+             << "    <html>"
+             << buf
+             << "</html>\n";
+
     }
 
     // restore stdio streambufs
