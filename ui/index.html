@@ -7,6 +7,17 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+<script>function showResponse()
+{
+    var xmlHttp = null;
+
+    xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "serve/", false );
+    xmlHttp.send( null );
+    document.getElementById("response").innerHTML = xmlHttp.responseText;
+}
+</script>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,7 +47,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body onload="showResponse()">
 
     <!-- Begin page content -->
     <div class="container">
@@ -47,6 +58,7 @@
       <p class="lead">With this site I want to show, that I have some web-biulding skills, and can create sometheing such simple in one day. And also, that i have some motivation. "Dream-company" deserverse some spare time ;)</p>      
       <p class="lead"></p>
       <p class="lead">This app should parse your user agent. And shows whetehr you are first of your kind. Or if not - last time, when same useragent wisited </p>
+      <p id="response"></p>
       <p></p>
     </div>
 
