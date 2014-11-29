@@ -1,16 +1,15 @@
 #include <boost/asio.hpp>
 #include <boost/asio/io_service.hpp>
-#include <boost/asio/ip/tcp.hpp>
 #include <boost/asio/spawn.hpp>
 #include <boost/asio/steady_timer.hpp>
 #include <boost/asio/write.hpp>
 #include <boost/chrono/chrono.hpp>
-#include <iostream>
 #include <chrono>
-#include <memory>
-#include <map>
-#include <string>
 #include <ctime>
+#include <iostream>
+#include <map>
+#include <memory>
+#include <string>
 
 using boost::asio::local::stream_protocol;
 
@@ -46,7 +45,7 @@ public:
                       if ( userAgent.find(user_agent_str) == userAgent.end() ) {
                           //set cuurent time as UA value
                           userAgent[user_agent_str] = std::time(nullptr);
-                          std::strcpy(data_write, "Seems, that you are the first person, wisited via such browser! Great!");
+                          std::strcpy(data_write, "Seems, that you are the first person, visited via such browser! Great!");
                       } else {                        
                           //count difference between UA visit time (as days)
                           int days_passed = (std::time(nullptr) - userAgent[user_agent_str])/(60*60*24);
