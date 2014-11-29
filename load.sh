@@ -1,7 +1,13 @@
 #!/bin/sh
 CLEAN=$1
 
-cd back/
+cd ui/
+for md in *md; do
+	base=${md%.*}
+	markdown $md > ${base}.html
+done
+
+cd ../back/
 make $CLEAN all
 killall fastcgi_proxy
 killall map_server
