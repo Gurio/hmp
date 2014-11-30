@@ -1,8 +1,5 @@
-<div class="container">
-  <div class="page-header">
-    <h2>Arseni Lapunov</h2>
-  </div>
-  <p class="lead" id="main"></p>
+<div class="page-header">
+  <h2>Arseni Lapunov</h2>
 </div>
 
 ###About me

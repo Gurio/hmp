@@ -55,10 +55,10 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li id="home">    <a href="javascript:renderElementById(home,main);javascript:renderElementById(serve,stat);">Home</a></li>
-            <li id="cv">      <a href="javascript:renderElementById(cv,main);">       CV</a></li>
-            <li id="contact"> <a href="javascript:renderElementById(contact,main);">  Contact</a></li>
-            <li id="about">   <a href="javascript:renderElementById(about,main);">    About</a></li>
+            <li class="active" id="home">    <a id="home-ref"    href="#home"     onclick="javascript:reloadContents(home);">     Home</a></li>
+            <li id="cv">                     <a id="cv-ref"      href="#cv"       onclick="javascript:reloadContents(cv);">       CV</a></li>
+            <li id="contact">                <a id="contact-ref" href="#contact"  onclick="javascript:reloadContents(contact);">  Contact</a></li>
+            <li id="about">                  <a id="about-ref"   href="#about"    onclick="javascript:reloadContents(about);">    About</a></li>
           </ul>
         </div>
       </div>
@@ -66,15 +66,14 @@
 
     <!-- Begin page content -->
     <div class="container">
-      <div class="page-header">
+      <!--div class="page-header">
         <h1>This is simple skills demo site.</h1>
-      </div>
+      </div-->
       <p class="lead" id="main"></p>
     </div>
 
     <script>
-      renderElementById(home,main);
-      renderElementById(serve,stat);
+      loadContents();
     </script>
 
     <footer class="footer">

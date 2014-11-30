@@ -1,10 +1,9 @@
-<div class="container">
-  <div class="page-header">
-    <h2>Arseni Lapunov</h2>
-  </div>
-  <p class="lead" id="main"></p>
+<div class="page-header">
+  <h2>Arseni Lapunov</h2>
 </div>
- 
+
+![me](photo.jpg)
+
 ###Contact info
   - Mobile tel: +375295654715
   - E-mail: re.stage00101@gmail.com
