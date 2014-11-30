@@ -1,4 +1,9 @@
-##Arseni Lapunov
+<div class="container">
+  <div class="page-header">
+    <h2>Arseni Lapunov</h2>
+  </div>
+  <p class="lead" id="main"></p>
+</div>
  
 ###Contact info
   - Mobile tel: +375295654715
