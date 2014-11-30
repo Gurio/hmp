@@ -1,4 +1,9 @@
-##Arseni Lapunov
+<div class="container">
+  <div class="page-header">
+    <h2>Arseni Lapunov</h2>
+  </div>
+  <p class="lead" id="main"></p>
+</div>
 
 ###About me
 Highly motivated sowftware engineere with 3+ years of experience in C/C++ development, for low-level and web. 
