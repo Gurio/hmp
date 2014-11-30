@@ -4,7 +4,7 @@ var contact = 	"contact";
 var about 	= 	"about";
 var serve 	= 	"serve";
 
-var sections=	[home, cv, contact, about, serve]
+var main_sections=	[home, cv, contact, about]
 
 var main 	= 	"main";
 var stat 	= 	"stat";
@@ -17,9 +17,11 @@ function renderElementById(path,elem_id)
     xmlHttp.open( "GET", path, false );
     xmlHttp.send( null );
     document.getElementById(elem_id).innerHTML = xmlHttp.responseText;
-    sections.forEach(function(entry) {
-	    document.getElementById(entry).className = (entry == path) ? "active" : "";
-	});
+    if (elem_id == main){
+	    main_sections.forEach(function(entry) {
+	    	document.getElementById(entry).className = (entry == path) ? "active" : "";
+		});
+	}
     
 }
 
