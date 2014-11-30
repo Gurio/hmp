@@ -1,6 +1,6 @@
-#Arseni Lapunov
+##Arseni Lapunov
  
-##Contact info
+###Contact info
   - Mobile tel: +375295654715
   - E-mail: re.stage00101@gmail.com
   - Skype: re-stage
