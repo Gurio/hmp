@@ -1,4 +1,9 @@
-##About this website
+<div class="container">
+  <div class="page-header">
+    <h2>About this website</h2>
+  </div>
+  <p class="lead" id="main"></p>
+</div>
 
 This site is simple C++ app, that shows user visits history. It is build on top of nginx and C++ boost.asio. You can also find here my CV and contact info. Feel free to communicate :)
 
