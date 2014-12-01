@@ -13,6 +13,13 @@ Highly motivated sowftware engineere with 3+ years of experience in C/C++ develo
   - Digital Signal Processors
   - FPGA Designing (Altera Quartus)
 
+###Education
+> __2009-2014__	
+* Belarusian State University of Informatics and Radioelectronics,
+* Faculty of Computer Systems and Networks
+* Bachelor's degree, Computer Engineering
+
+
 
 ###Employment
 
