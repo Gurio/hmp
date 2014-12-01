@@ -9,10 +9,11 @@ var main_sect	=	[home, cv, contact, about]
 var main 	= 	"main";
 var stat 	= 	"stat";
 
-function renderElementById(page, path, elem_id)
+function renderElementById(elem_id, path, page)
 {
+    if(typeof(page)==='undefined') page = path;
+    
     var xmlHttp = null;
-
     xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", page, false );
     xmlHttp.send( null );
@@ -41,8 +42,8 @@ function reloadContents (id){
 
 function loadContents (){
 	frag = lastURIfragment();
-	renderElementById(frag + ".html", frag, main);
+	renderElementById(main, frag, frag + ".html");
 	if (frag == home){
-		renderElementById(serve, serve, stat);
+		renderElementById(stat, serve);
 	}
 }
