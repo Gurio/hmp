@@ -1,10 +1,10 @@
 var home 	= 	"home";
 var cv 		= 	"cv";
-var contact = 	"contact";
+var contact 	= 	"contact";
 var about 	= 	"about";
 var serve 	= 	"serve";
 
-var main_sections=	[home, cv, contact, about]
+var main_sect	=	[home, cv, contact, about]
 
 var main 	= 	"main";
 var stat 	= 	"stat";
@@ -18,7 +18,7 @@ function renderElementById(page, path, elem_id)
     xmlHttp.send( null );
     document.getElementById(elem_id).innerHTML = xmlHttp.responseText;
     if (elem_id == main){
-	    main_sections.forEach(function(entry) {
+	    main_sect.forEach(function(entry) {
 	    	document.getElementById(entry).className = (entry == path) ? "active" : "";
 		});
 	}
@@ -27,10 +27,11 @@ function renderElementById(page, path, elem_id)
 
 function lastURIfragment()
 {
-	if ( window.location.href.indexOf("#") == -1) 
+	URI = window.location.href;
+	if ( URI.indexOf("#") == -1) 
 		return home;
-  	URI = window.location.href.split("#");
-  	return URI[URI.length - 1]
+  	URI_split = URI.split("#");
+  	return URI_split[URI_split.length - 1]
 }
 
 function reloadContents (id){
