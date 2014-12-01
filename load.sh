@@ -1,5 +1,5 @@
 #!/bin/sh
-CLEAN=$1
+OPT=$1
 
 cd ui/
 for md in *md; do
@@ -7,9 +7,11 @@ for md in *md; do
 	markdown $md > ${base}.html
 done
 
-cd ../back/
-make $CLEAN all
-killall fastcgi_proxy
-killall map_server
-spawn-fcgi -p 8000 -n fastcgi_proxy &
-./map_server /opt/hmp/useragent.sock &
+if [ $OPT -eq "restart" ]; then
+	cd ../back/
+	make clean all
+	killall fastcgi_proxy
+	killall map_server
+	spawn-fcgi -p 8000 -n fastcgi_proxy &
+	./map_server /opt/hmp/useragent.sock &
+fi
