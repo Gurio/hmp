@@ -36,7 +36,7 @@ Highly motivated sowftware engineere with 3+ years of experience in C/C++ develo
 
 > ####Company: GP software.travel, Minsk 06/01/2014 - present
 * _Position_ : Software Engineer
-* _Responsibilities_: Improvement of search engine. Fixing bugs/adding functionality(C++/Java). Content prepartion/transformation (Bash/Python). Search services deployment (Bash/Make).
+* _Responsibilities_: Improvement of search engine. Fixing bugs/adding functionality(C++/Java). Content preparation/transformation (Bash/Python). Search services deployment (Bash/Make).
 * _Tools & technologies used_: C++, Boost, TCP, Make, Bash, Java, Python, nginx.
 
 ###Qualification:
