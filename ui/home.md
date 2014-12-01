@@ -1,5 +1,5 @@
 <div class="page-header">
-  <h2>Hire me ;)</h2>
+  <h2>You need me comrades ;)</h2>
 </div>
 <script src="render.js"></script>
 <p class="lead" id="stat"></p>
