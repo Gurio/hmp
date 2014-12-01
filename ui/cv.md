@@ -15,10 +15,11 @@ Highly motivated sowftware engineere with 3+ years of experience in C/C++ develo
 
 ###Education
 
-> __2009-2014__	
-* Belarusian State University of Informatics and Radioelectronics,
-* Faculty of Computer Systems and Networks
-* Bachelor's degree, Computer Engineering
+> University: 
+* _Education yeras_ : 2009-2014
+* _University_: Belarusian State University of Informatics and Radioelectronics,
+* _Faculty_: Faculty of Computer Systems and Networks
+* _Deatails_: Bachelor's degree, Computer Engineering
 
 
 
