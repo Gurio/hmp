@@ -7,7 +7,7 @@ for md in *md; do
 	markdown $md > ${base}.html
 done
 
-if [ "$OPT" != "restart" ]; then
+if [ "$OPT" == "restart" ]; then
 	cd ../back/
 	make clean all
 	killall fastcgi_proxy
