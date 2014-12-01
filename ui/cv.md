@@ -46,7 +46,7 @@ Highly motivated sowftware engineere with 3+ years of experience in C/C++ develo
  
 > #### General
 - __Strengths__: executive, ambitious, curious.
-- _Weaknesses_: get deeply into problem, so it can take much time 
+- _Weaknesses_: getting deeply into problem, so it can take much time 
  
 > #### Professionally relevant skills:
 - Languages: C/C++, Python, Bash, Java, Assembly, VHDL, SQL
