@@ -14,6 +14,7 @@ Highly motivated sowftware engineere with 3+ years of experience in C/C++ develo
   - FPGA Designing (Altera Quartus)
 
 ###Education
+
 > __2009-2014__	
 * Belarusian State University of Informatics and Radioelectronics,
 * Faculty of Computer Systems and Networks
