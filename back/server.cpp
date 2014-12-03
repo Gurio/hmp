@@ -80,7 +80,7 @@ public:
               {
                   boost::system::error_code ignored_ec;
                   timer_.async_wait(yield[ignored_ec]);
-                  if (timer_.expires_from_now() <= std::chrono::seconds(0))
+                  if (timer_.expires_from_now() <= std::chrono::seconds(1))
                       socket_.close();
               }
           });
