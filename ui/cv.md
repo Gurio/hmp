@@ -50,7 +50,7 @@ Highly motivated sowftware engineere with 3+ years of experience in C/C++ develo
 
 > ####Company: GP software.travel, Minsk 2014-06-01 - present
 * _Position_: Software Engineer
-* _Responsibilities_: Development of http://go-to.travel/. It is written in C++ (for search engine) and Java(for supplier info parsing and static files generation). 
+* _Responsibilities_: Development of http://go-to.travel/ backend. It is written in C++ (for search engine) and Java(for supplier info parsing and static files generation). 
 * _Challenges_: Improvements of search engine. Fixing bugs/adding functionality(C++/Java). Small and big tasks. From adding new json fields in response, to implementing new tour-operator support (parsing tour info, and generation of appropriate content). Content preparation/transformation (Bash/Python). Search services deployment (Bash/Make).
 * _Tools & technologies used_: C++, Boost, TCP, Make, Bash, Java, Python, Nginx. 	 
 
